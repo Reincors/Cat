@@ -8,10 +8,18 @@ p{
 }
 
 .img-Marik{
-    float: right;
+    height: 0;
+    opacity: 0;
     border: 3px solid #D2B48C;
     padding: 3px;
     background-color: peru;
+    transition: 2s;
+}
+
+#tab1:checked ~ .img-Marik{
+    height: auto;
+    float: right;
+    opacity: 1;
 }
 
 .con-bonya{
@@ -19,10 +27,18 @@ p{
 }
 
 .img-bonya{
-    float: right;
     border: 3px solid #D2B48C;
     padding: 3px;
     background-color: peru;
+    transition: 2s;
+    height: 0;
+    opacity: 0;
+}
+
+#tab2:checked ~ .img-bonya{
+    height: auto;
+    float: right;
+    opacity: 1;
 }
 
 .con-margosha{
@@ -30,10 +46,18 @@ p{
 }
 
 .img-margosha{
-    float: right;
+    opacity: 0;
+    height: 0;
+    transition: 2s;
     border: 3px solid #D2B48C;
     padding: 3px;
     background-color: peru;
+}
+
+#tab3:checked ~ .img-margosha{
+    height: auto;
+    opacity: 1;
+    float: right;
 }
 
 a{
